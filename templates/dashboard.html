@@ -8,6 +8,27 @@
 
 </head>
 <body>
+    <a href="{% url 'home-page' %}">
+        <h2>Home </h2>
+    </a>
+    <hr>
     <h2>HELLO WORLD</h2>
+    <hr>
+    <ul>
+    {% for num in msg %}
+        <li>
+        {{ num }}
+        </li>
+    {% endfor %}
+    
+    </ul>
+    <hr>
+    <ol>
+    {% for name in names %}
+        <li>
+        {{name}}
+        </li>
+    {% endfor %}
+    </ol>
 </body>
 </html>
